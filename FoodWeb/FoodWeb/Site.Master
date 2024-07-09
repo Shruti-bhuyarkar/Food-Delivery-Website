@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %>ZaykaExpress</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -14,6 +14,56 @@
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+      <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding-top: 70px; 
+        }
+        .navbar {
+            background-color: #333; 
+            color: #fff; / White text color /
+            padding: 15px 0;
+        }
+        .navbar-brand {
+            color: yellowgreen; 
+            font-size: 1.5em;
+        }
+         .nav navbar-nav{
+              color: yellowgreen; 
+         }
+        .navbar-nav {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .navbar-nav li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .navbar-nav li a {
+            color: yellowgreen; 
+            text-decoration: none;
+        }
+        .navbar-nav li a:hover {
+            color:greenyellow; 
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
+        } 
+        .name{
+            font-style:italic;
+             color: yellowgreen;
+        }
+        
+    </style>
 
 </head>
 <body>
@@ -45,14 +95,19 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                    <a class="navbar-brand" runat="server" href="~/">Zayka<span class="name">Express</span></a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
+                        <li><a runat="server" href="~/Login">Login</a></li>
+                        <li><a runat="server" href="~/Signup">Sign Up</a></li>
                     </ul>
                 </div>
             </div>
